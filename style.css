@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+padding: 10px;
+    background: radial-gradient(ellipse at right bottom, #EEB1BF 5%, #d42dab 25%, #4d1d63 50%, #030243 100%)
+}
+.main{
+    max-width: 700px;
+    width: 100%;
+    background-color:white;
+    padding: 27px 32px;
+    border-radius: 6px;
+}
+.main .title{
+    font-size: 27px;
+font-weight: 540;
+position: relative;
+}
+b{
+    color:#d42dab;
+}
+.main .title::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: radial-gradient(ellipse at right bottom, #EEB1BF 5%, #d42dab 25%, #4d1d63 50%, #030243 100%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main form .user-div{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-between;
+}
+form .user-div .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 5px;
+}
+input{
+height: 45px;
+width: 100%;
+outline: none;
+border-radius: 5px;
+border: 1px solid #ccc;
+padding-left: 15px;
+font-size: 16px;
+transition: all 0.5s ease;
+}
+.main .input-box .detail{
+    font-size: 550;
+    margin-bottom: 5px;
+    display: block;
+    
+}
+input:focus, input:valid{
+    border-color: #4d1d63;
+}
+.genders{
+font-size: 27px;
+font-weight: 540;
+}
+.catagray{
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;
+    font-size: 16px
+}
+.catagray label{
+    display: flex;
+    align-items: center;
+}
+.catagray .dot{
+    height: 18px;
+    width: 18px;
+background: #030243;
+border-radius: 50%;
+margin-right: 12px;
+border: 5px solid transparent;
+}
+.catagray .dot:hover{
+    color: red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+padding: 10px;
+    background: radial-gradient(ellipse at right bottom, #EEB1BF 5%, #d42dab 25%, #4d1d63 50%, #030243 100%)
+}
+.main{
+    max-width: 700px;
+    width: 100%;
+    background-color:white;
+    padding: 27px 32px;
+    border-radius: 6px;
+}
+.main .title{
+    font-size: 27px;
+font-weight: 540;
+position: relative;
+}
+b{
+    color:#d42dab;
+}
+.main .title::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: radial-gradient(ellipse at right bottom, #EEB1BF 5%, #d42dab 25%, #4d1d63 50%, #030243 100%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.main form .user-div{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-between;
+}
+form .user-div .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 5px;
+}
+input{
+height: 45px;
+width: 100%;
+outline: none;
+border-radius: 5px;
+border: 1px solid #ccc;
+padding-left: 15px;
+font-size: 16px;
+transition: all 0.5s ease;
+}
+.main .input-box .detail{
+    font-size: 550;
+    margin-bottom: 5px;
+    display: block;
+    
+}
+input:focus, input:valid{
+    border-color: #4d1d63;
+}
+.catagray{
+    width: 82%;
+    display: flex;
+
+    justify-content: space-between;
+    margin: 14px 0;
+    font-size: 16px
+}
+.catagray label{
+    display: flex;
+    align-items: center;
+}
+.catagray .dot{
+    height: 18px;
+    width: 18px;
+background: #030243;
+border-radius: 50%;
+margin-right: 12px;
+border: 5px solid transparent;
+}
+.catagray .dot:hover{
+
+    background-color: red;
+    cursor:grab;
+}
+.main .user-div .btn:hover{
+    color: #4d1d63;
+    background-color: #ccc;
+    cursor: -webkit-grab; cursor: grab;}
+.btn:hover{
+    color: #4d1d63;
+    background-color: #ccc;
+    cursor: -webkit-grab; cursor: grab;}
+form .button{
+    height: 45px;
+    width: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color:white;
+font-size: 22px;
+font-weight: 540;
+border: none;
+letter-spacing: 1px;
+border-radius: 5px;
+ border: bottom width 2px; ;
+padding-left: 15px;
+background:radial-gradient(ellipse at right bottom, #EEB1BF 5%, #d42dab 25%, #4d1d63 50%, #030243 100%);
+}
+form .button input:hover{
+    background:red;
+    cursor: grab;
+
+}
+@media(max-width:586px ){
+    .main{
+        max-width: 100%;
+    }
+    form .user-div .input-box{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    .catagray{
+        width: 100%;   
+    }
+    .main form .user-div{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-div::-webkit-scrollbar{
+        width: 0;
+    }
+}
